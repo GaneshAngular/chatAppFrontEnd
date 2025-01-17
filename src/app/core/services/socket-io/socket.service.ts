@@ -5,7 +5,7 @@ import { io, Socket } from 'socket.io-client';
   providedIn: 'root'
 })
 export class SocketService {
-  private socket:Socket=io("http://localhost:8080",{
+  private socket:Socket=io("https://chatappbackend-d53s.onrender.com",{
     reconnection: true,         // Enable reconnection
     reconnectionAttempts: 5,    // Number of attempts to reconnect before failing
     reconnectionDelay: 1000,    // Time in ms between reconnection attempts
